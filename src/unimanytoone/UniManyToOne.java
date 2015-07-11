@@ -34,12 +34,17 @@ public class UniManyToOne {
         Televidente televidente2 = new Televidente();
         televidente2.setNombre("Televidente 2");
         televidente2.setTelevisiva(cadena3);
+        
+        Televidente televidente3 = new Televidente();
+        televidente3.setNombre("Televidente 3");
+        televidente3.setTelevisiva(cadena1);
 
         /* Guardamos los dos objetos Televidente en la base de Datos */
         sesion = HibernateUtil.getSessionFactory().openSession();
         sesion.beginTransaction();
         sesion.save(televidente1);
         sesion.save(televidente2);
+        sesion.save(televidente3);
         sesion.getTransaction().commit();
         sesion.close();
         
