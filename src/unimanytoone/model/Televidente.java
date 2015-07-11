@@ -1,8 +1,25 @@
 package unimanytoone.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+
+@Entity
+@Table( name = "TELEVIDENTEA")
 public class Televidente {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "ID_TELEVIDENTE")
     private Integer idTelevidente;
+    @Column(name = "NOMBRE")
     private String nombre;
+    @ManyToOne
+    @JoinColumn(name = "ID_TELEVISIVA")
     private Televisiva televisiva;
 
     public Televidente() {
