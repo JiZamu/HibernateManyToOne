@@ -7,7 +7,7 @@
 <hibernate-mapping>
     <class name = "unimanytoone.model.Televidente" table = "TELEVIDENTE">
         <id name = "idTelevidente" column = "ID_TELEVIDENTE">
-            <generator class = "indentity"/>
+            <generator class = "identity"/>
         </id>
         
         <property name = "nombre" column = "NOMBRE"/>

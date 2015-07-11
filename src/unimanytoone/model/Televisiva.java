@@ -1,7 +1,7 @@
 package unimanytoone.model;
 
 public class Televisiva {
-    private Integer id;
+    private Integer idTelevisiva;
     private String nombre;
 
     public Televisiva() {
@@ -11,12 +11,12 @@ public class Televisiva {
         this.nombre = nombre;
     }
 
-    public Integer getId() {
-        return id;
+    public Integer getIdTelevisiva() {
+        return idTelevisiva;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setIdTelevisiva(Integer idTelevisiva) {
+        this.idTelevisiva = idTelevisiva;
     }
 
     public String getNombre() {
@@ -26,4 +26,6 @@ public class Televisiva {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
+
+    
 }
