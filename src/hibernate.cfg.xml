@@ -11,7 +11,8 @@
     <property name="hbm2ddl.auto">create-drop</property>
     <!--
     <mapping resource="unimanytoone/mapping/Televidente.hbm.xml"/>
-    <mapping resource="unimanytoone/mapping/Televisiva.hbm.xml"/>-->
+    <mapping resource="unimanytoone/mapping/Televisiva.hbm.xml"/>
+    -->
     
     <mapping class = "unimanytoone.model.Televidente"/>
     <mapping class = "unimanytoone.model.Televisiva"/>
